@@ -1,0 +1,26 @@
+[
+    {
+        "name": "OS",
+        "function": "get_os"
+    },
+    {
+        "name": "Kernel",
+        "function": "get_kernel"
+    },
+    {
+        "name": "CPU",
+        "function": "get_cpu"
+    },
+    {
+        "name": "GPU",
+        "function": "get_gpu"
+    },
+    {
+        "name": "Uptime",
+        "function": "get_uptime"
+    },
+    {
+        "name": "Shell",
+        "function": "get_shell"
+    }
+]
