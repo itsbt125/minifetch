@@ -1,1 +1,1 @@
-Minifetch is a system fetch tool designed to be minimal while being written in Python.
+Minifetch is a system fetch tool designed to be minimal while being written in Python. Minifetch picks random ASCII art filtered by module height from a ~6mb local database when ran to remain visually appealing, perfect for ricers.
