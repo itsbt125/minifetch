@@ -17,7 +17,7 @@ def get_packages():
         if shutil.which(cmd[0]):
             try:
                 output = subprocess.check_output(cmd, text=True)
-                return f"{len(output.splitlines())} pkgs ({name})"
+                return f"{len(output.splitlines())} ({name})"
             except:
                 return name, "Error"
     return "Unknown"
