@@ -1,3 +1,4 @@
+# memory.py
 def get_memory():
     with open("/proc/meminfo") as f:
         meminfo = f.read()
