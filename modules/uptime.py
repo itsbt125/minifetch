@@ -11,8 +11,8 @@ def get_uptime():
     if days:
         parts.append(f"{days}d")
     if hours:
-        parts.append(f"{hours}hr" if hours == 1 else f"{hours}hrs")
+        parts.append(f"{hours} hr" if hours == 1 else f"{hours} hrs")
     if minutes:
-        parts.append(f"{minutes}min" if minutes == 1 else f"{minutes}mins")
+        parts.append(f"{minutes} min" if minutes == 1 else f"{minutes} mins")
 
     return " ".join(parts) if parts else "0mins"
