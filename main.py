@@ -7,6 +7,11 @@ from modules.uptime import get_uptime
 from modules.shell import get_shell
 from modules.cpu import get_cpu
 from modules.gpu import get_gpu
+from modules.packages import get_packages
+from modules.memory import get_memory
+from modules.terminal import get_terminal
+from modules.de import get_de
+from modules.wm import get_wm
 from modules.ascii.art import get_ascii_art
 
 BASE_DIR = Path(__file__).parent
@@ -16,10 +21,15 @@ FUNCTION_MAP = {
     "get_cpu": get_cpu,
     "get_gpu": get_gpu,
     "get_uptime": get_uptime,
-    "get_shell": get_shell
+    "get_shell": get_shell,
+    "get_packages": get_packages,
+    "get_memory": get_memory,
+    "get_terminal": get_terminal,
+    "get_de": get_de,
+    "get_wm": get_wm
 }
 
-# load modules from JSON
+# Load modules from modules.json file
 with open(BASE_DIR / "modules.json") as f:
     modules_data = json.load(f)
 

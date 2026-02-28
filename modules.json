@@ -16,11 +16,31 @@
         "function": "get_gpu"
     },
     {
+        "name": "RAM",
+        "function": "get_memory"
+    },
+    {
         "name": "Uptime",
         "function": "get_uptime"
     },
     {
+        "name": "Packages",
+        "function": "get_packages"
+    },
+    {
+        "name": "Terminal",
+        "function": "get_terminal"
+    },
+    {
         "name": "Shell",
         "function": "get_shell"
+    },
+    {
+        "name": "DE",
+        "function": "get_de"
+    },
+    {
+        "name": "WM",
+        "function": "get_wm"
     }
 ]
