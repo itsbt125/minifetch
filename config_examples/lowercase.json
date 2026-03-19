@@ -1,0 +1,46 @@
+[
+    {
+        "name": "os",
+        "function": "get_os"
+    },
+    {
+        "name": "kernel",
+        "function": "get_kernel"
+    },
+    {
+        "name": "cpu",
+        "function": "get_cpu"
+    },
+    {
+        "name": "gpu",
+        "function": "get_gpu"
+    },
+    {
+        "name": "ram",
+        "function": "get_memory"
+    },
+    {
+        "name": "uptime",
+        "function": "get_uptime"
+    },
+    {
+        "name": "packages",
+        "function": "get_packages"
+    },
+    {
+        "name": "terminal",
+        "function": "get_terminal"
+    },
+    {
+        "name": "shell",
+        "function": "get_shell"
+    },
+    {
+        "name": "de",
+        "function": "get_de"
+    },
+    {
+        "name": "wm",
+        "function": "get_wm"
+    }
+]

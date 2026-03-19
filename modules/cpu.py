@@ -15,8 +15,7 @@ def get_cpu():
     except FileNotFoundError:
         return "CPU info unavailable"
 
-    # remove anything past it like an iGPU if present
-    cpu_name = cpu_name.split(" w/")[0]
+    cpu_name = cpu_name.split(" w/")[0] # helps to exclude iGPU from name
     try:
         with open("/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq") as f:
             max_freq = int(f.read().strip()) / 1000000 

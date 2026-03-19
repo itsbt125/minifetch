@@ -1,0 +1,18 @@
+[
+    {
+        "name": "os",
+        "function": "get_os"
+    },
+    {
+        "name": "kernel",
+        "function": "get_kernel"
+    },
+    {
+        "name": "memory",
+        "function": "get_memory"
+    },
+    {
+        "name": "terminal",
+        "function": "get_terminal"
+    }
+]

@@ -2,4 +2,4 @@
 import os
 
 def get_shell():
-    return os.environ.get("SHELL")
+    return os.path.basename(os.environ.get("SHELL"))

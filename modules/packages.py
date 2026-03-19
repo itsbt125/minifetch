@@ -1,4 +1,3 @@
-# packages.py
 import subprocess
 import shutil
 
@@ -6,7 +5,7 @@ def get_packages():
     managers = {
         "pacman": ["pacman", "-Qq"],
         "dpkg": ["dpkg-query", "-f", "${binary:Package}\n", "-W"],
-        "dnf": ["dnf", "list", "installed"],
+        "dnf": ["dnf", "list", "--installed"],
         "rpm": ["rpm", "-qa"],
         "apk": ["apk", "info"],
         "xbps": ["xbps-query", "-l"],
@@ -17,7 +16,11 @@ def get_packages():
         if shutil.which(cmd[0]):
             try:
                 output = subprocess.check_output(cmd, text=True)
-                return f"{len(output.splitlines())} ({name})"
-            except:
-                return name, "Error"
+                lines = output.splitlines()
+                if name == "dnf":
+                    lines = [l for l in lines if l and not l.startswith("Installed")]
+
+                return f"{len(lines)} ({name})"
+            except Exception:
+                return f"{name} Error"
     return "Unknown"
